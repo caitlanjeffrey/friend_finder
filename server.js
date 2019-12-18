@@ -1,19 +1,17 @@
-const express = require("express")
-const path = require("path")
+var express = require("express")
+var path = require("path")
 
-const app = express()
+var app = express()
 
 // port listener
-const port = process.env.port || 8080
+var PORT = process.env.PORT || 8080
 
 // setting up express server
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
-// requiring paths
-require("./routes/apiRoutes.js")(app)
-require("./routes/htmlRoutes.js")(app)
+require("./app/routes/apiRoutes")(app);
 
-app.listen(port, function() {
-    console.log("App listening on PORT: " + port);
+app.listen(PORT, function() {
+    console.log("App listening on PORT: " + PORT);
 });

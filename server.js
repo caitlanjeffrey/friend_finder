@@ -1,17 +1,23 @@
-var express = require("express")
-var path = require("path")
+const express = require("express")
+const app = express()
 
-var app = express()
+const apiRoutes = require("./routes/apiRoutes")
+const htmlRoutes = require("./routes/htmlRoutes")
+
 
 // port listener
-var PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 8080
 
 // setting up express server
-app.use(express.urlencoded({extended: true}))
 app.use(express.json())
+app.use(express.urlencoded({extended: true}))
 
-require("./app/routes/apiRoutes")(app);
+//allows sending of additional files through the 'public folders'
+app.use(express.static("public"))
+
+apiRoutes(app)
+htmlRoutes(app)
 
 app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
-});
+}); 

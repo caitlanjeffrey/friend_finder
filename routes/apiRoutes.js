@@ -1,5 +1,5 @@
 
-const friends = require("../data/friends")
+const friends = require("../data/friends") 
 
 console.log(friends)
 
@@ -14,6 +14,14 @@ module.exports = function(app) {
         //incoming survey results
         // req.body or req.params
         // console.log(req)
+
+        if ("..." ) {
+            newSurvey.push(req.body);
+            res.json(true);
+        } else {
+            waitListData.push(req.body);
+            res.json(false);
+        }
         console.log(req.body)
 
         // magic logic coparation the score with all the scores

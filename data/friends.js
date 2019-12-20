@@ -20,3 +20,7 @@ const friends = [{
 
 module.exports = friends
 
+const other = [{
+    "name":"Baby Yoda",
+    "photo":"https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjNlpj888LmAhVYqZ4KHfmLB9UQjRx6BAgBEAQ&url=https%3A%2F%2Ftowardsdatascience.com%2F3-numpy-image-transformations-on-baby-yoda-c27c1409b411&psig=AOvVaw2uIMyrKb7RkgoKsLSmzp5O&ust=1576885918030006",
+}]

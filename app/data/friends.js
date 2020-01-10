@@ -1,6 +1,3 @@
-
-// JSON object
-
 const friends = [
     {
     "name":"Caitlan",

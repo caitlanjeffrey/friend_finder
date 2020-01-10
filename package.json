@@ -1,0 +1,29 @@
+{
+  "name": "friend_finder",
+  "version": "1.0.0",
+  "description": "find your fantasy friend!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caitlanjeffrey/friend_finder.git"
+  },
+  "keywords": [
+    "fantasy",
+    "friend",
+    "island"
+  ],
+  "author": "caitlan jeffrey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caitlanjeffrey/friend_finder/issues"
+  },
+  "homepage": "https://github.com/caitlanjeffrey/friend_finder#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}

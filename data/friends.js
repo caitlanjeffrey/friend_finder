@@ -39,9 +39,26 @@ const friends = [
     }
 ]
 
-module.exports = friends
+const totalDifference = function (userOne, userTwo) {
+    var scoreOne = 0;
+    var scoreTwo = 0;
+    var difference = 0;
 
-const other = [{
-    "name":"Baby Yoda",
-    "photo":"https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjNlpj888LmAhVYqZ4KHfmLB9UQjRx6BAgBEAQ&url=https%3A%2F%2Ftowardsdatascience.com%2F3-numpy-image-transformations-on-baby-yoda-c27c1409b411&psig=AOvVaw2uIMyrKb7RkgoKsLSmzp5O&ust=1576885918030006",
-}]
+    for (let i = 0; i < userOne.scores.length; i++) {
+        scoreOne = scoreOne + userOne.scores[i]
+    }
+
+    for (let i = 0; i < userTwo.scores.length; i++) {
+        scoreTwo = scoreTwo + userTwo.scores[i]
+    }
+
+    difference = scoreOne - scoreTwo;
+
+    return difference;
+
+    return userTwo;
+}
+
+console.log(totalDifference(friends[0], friends[1]));
+
+module.exports = friends;

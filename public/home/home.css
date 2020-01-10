@@ -1,0 +1,19 @@
+body {
+    color: darkslategray;
+}
+
+.jumbotron {
+    background-image: url(../images/fantasy_island.jpg);
+}
+.form-row {
+    margin: 20px;
+    padding: 10px;
+}
+
+select {
+    color: darkslategray;
+}
+
+.links {
+    margin: 10px 0 0 0;
+}

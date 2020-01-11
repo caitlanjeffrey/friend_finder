@@ -1,5 +1,10 @@
 body {
-    color: darkslategray;
+    color: hotpink;
+    background-color: black;
+}
+
+.jumbotron {
+    background: transparent;
 }
 
 .form-row {
@@ -10,8 +15,13 @@ body {
 select {
     color: darkslategray;
 }
-
+.btn {
+    background-color: hotpink;
+    color: white;
+}
 .btn-lg {
+    background-color: hotpink;
+    color: white;
     border-radius: 0;
     padding: 15px;
 }

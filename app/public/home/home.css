@@ -1,7 +1,6 @@
 body {
     color: hotpink;
-    background-image: url(../images/fantasy_island.jpg);
-    background: asset-url("../images/fantasy_island.jpg", image)
+    background-color: black;
 }
 
 .jumbotron {
@@ -11,6 +10,11 @@ body {
 .form-row {
     margin: 20px;
     padding: 10px;
+}
+
+.btn {
+    background-color: hotpink;
+    color: white;
 }
 
 select {

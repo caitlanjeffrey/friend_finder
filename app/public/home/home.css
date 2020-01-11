@@ -1,10 +1,13 @@
 body {
-    color: darkslategray;
+    color: hotpink;
+    background-image: url(../images/fantasy_island.jpg);
+    background: asset-url("../images/fantasy_island.jpg", image)
 }
 
 .jumbotron {
-    background-image: url(../images/fantasy_island.jpg);
+    background: transparent;
 }
+
 .form-row {
     margin: 20px;
     padding: 10px;
@@ -16,4 +19,4 @@ select {
 
 .links {
     margin: 10px 0 0 0;
-}
+} 

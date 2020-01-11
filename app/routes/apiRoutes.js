@@ -43,6 +43,6 @@ module.exports = function(app) {
         friends.push(user);
         
         // send back to browser the best friend match
-        res.json(friends[bestFriendIndex]);
+        res.json(friends[bestFantasyFriend]);
     });
 };
